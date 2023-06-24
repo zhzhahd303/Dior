@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian DIOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Chakra+Petch:wght@500&family=Nunito+Sans&family=Prompt&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sub1.css">
+    <link href="img/dior.ico" rel="shortcut icon" type="image/x-icon">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js">    </script>
+    <script>
+        $(document).ready(function () {
+            $('nav').hide();
+
+            $('.tap').click(function () {
+                $('nav').slideToggle();
+            });
+        });        
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo"><a href="index.html">Christian Dior</a></div>
+        <ul>
+
+        </ul>
+
+        <div id="menu"><img src="img/Untitled-2.png" class="tap" alt="menubar"></div>
+        <nav>
+            <ul>
+                <li><a href="sub1.html">WOMAN</a></li>
+                <li><a href="sub1.html">Miss dior</a></li>
+                <li><a href="sub1.html">Dolce vita</a></li>
+                <li><a href="sub1.html">J'adore</a></li>
+                <li><a href="sub1.html">Holiday</a></li>
+            </ul>
+
+
+            <ul>
+                <li><a href="sub1.html">MAN</a></li>
+                <li><a href="sub1.html">Sauvage</a></li>
+                <li><a href="sub1.html">Dior homme</a></li>
+                <li><a href="sub1.html">Higher</a></li>
+            </ul>
+
+
+
+            <ul>
+                <li><a href="sub1.html">Service</a></li>
+                <li><a href="sub1.html">Notice</a></li>
+                <li><a href="sub1.html">Delivery</a></li>
+                <li><a href="sub1.html">Q&A</a></li>
+
+            </ul>
+
+            <ul>
+                <li><a href="sub1.html">MY</a></li>
+                <li><a href="sub1.html">Information</a></li>
+                <li><a href="sub1.html">Order list</a></li>
+                <li><a href="sub1.html">wish list</a>
+                <li><a href="sub1.html">Preferences</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section id="top">
+        <div id="buy">
+            <article id="pc"><img src="img/pur-1.jpg" id="pink" alt="product"></article>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script>
+
+                var image = document.getElementById("pink");
+                var img_array = ["img/pur-1.jpg", "img/pur-2.jpg"];
+                var index = 0;
+                function slide() {
+                    image.src = img_array[index];
+                    index++;
+                    if (index >= img_array.length) {
+                        index = 0;
+                    }
+                }
+                setInterval(slide, 2000);
+            </script>
+
+
+            <article id="ml">
+                <h2>J'ADORE</h2>
+                <h3>EAU DE PARFUM</h3><br>
+                <select>
+                    <option>
+                        &nbsp;&nbsp;&nbsp;&nbsp;30ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;109,000
+                        won</option>
+                    <option>
+                        &nbsp;&nbsp;&nbsp;&nbsp;50ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172,000
+                        won</option>
+                    <option>
+                        &nbsp;&nbsp;&nbsp;&nbsp;100ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;248,000
+                        won</option>
+                    <option>
+                        &nbsp;&nbsp;&nbsp;&nbsp;150ML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;310,000
+                        won</option>
+                </select>
+                <hr>
+
+                <div class="ck">
+                    <button>GIFT</button><button>CART</button><button>BUY</button>
+                </div>
+
+                <div id="online">
+                    <h3>Dior Beauty Online Offer<button class="btn">+</button></h3>
+
+                    <p class="gift">
+                        *Gift of Christmas star ornament with purchase of over 100,000 won including lip products<br>
+                        *Free Dior Red pouch for purchases over KRW 180,000 including Miss Dior products<br>
+                        *Free Shipping and Return Service<br>
+                        *Iconic Gift Wrapping Service
+
+                    </p>
+
+                    <h3>Delivery information<button class="btn">+</button></h3>
+                    <p class="gift">
+                        <span><b>Payment Guide</b><br>
+                            If the name of the depositor and the amount required for payment are different from the name
+                            of the actual depositor and the amount, the payment will not be processed.<br>
+                        </span><br>
+
+                        <span><b>Shipping information</b><br>
+                            In principle, same-day delivery is available for orders that have been paid for before 14:00
+                            on weekdays, but may vary depending on order volume or inventory.<br>
+                            Orders cannot be modified or canceled after shipment, and the return cost must be borne by
+                            the customer.<br>
+                            Delivery method: CJ Logistics<br>
+                            Delivery amount: KRW 2,500 (Free for purchases of KRW 50,000 or more)<br>
+                            Delivery Period: Average 5 days<br>
+                        </span><br>
+
+                        <span>
+                            <b>Exchange and return information</b><br>
+                            Exchanges and returns are possible within 7 days from the date of receipt of the
+                            product.<br>
+                            In the case of returns excluding product defects, refunds will be made after deducting 5,000
+                            won for round-trip shipping.<br>
+                            In the case of exchange or return due to product defect, free exchange or return will be
+                            made if the product is judged to be defective after confirmation through the customer
+                            center.<br>
+                            After opening or using the product, it is not possible to exchange or return due to simple
+                            change of mind.<br>
+                        </span>
+                    </p>
+
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('.btn').click(function () {
+                            $(this).parent().next().slideToggle();
+                        });
+                    });
+
+                </script>
+
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <section id="on">
+        <ul>
+            <li><a href=#>Information</a></li>
+            <li><a href=#re>review</a></li>
+        </ul>
+
+    </section>
+
+
+    <section id=photo>
+        <article>
+            <img src="img/top3.jpg" class="model" alt="explain1">
+            <img src="img/pur-3.jpg" id="cen" alt="explain2">
+            <p style="text-align:center"><b>Ylang Ylang Essence with floral-fruity notes,<br>
+
+                    Turkish Damask Rose Essence,<br>
+
+                    Grasse jasmine grandiflorum and Indian jasmine.<br><br></b></p>
+
+            <p>The three beats form a harmonious blend of fruitiness and sequential sensuality.</p>
+
+            <video src="img/836d1f67.h264.mp4" autoplay loop muted id="video"></video>
+
+            <p><b id="bb">Dior's &nbsp;J'adore &nbsp;Eau de &nbsp;Parfum</b><br>
+                is a white gold scent from Grasse.</p>
+            <br><br>
+            <p>With its original fragrance, this perfume that<br>
+                captivates everyone at once xreates an ideal<br>
+                flower that does not exist in this world.</p>
+            <img src="img/top8.jpg" class="two" alt="explain3">
+            <img src="img/top7.jpg" class="model" alt="explain4">
+            <img src="img/top9.jpg" class="two" alt="explain5">
+            <br>
+            <h5>TIPS</h5>
+            <img src="img/top10.jpg" id="hani" alt="explain6">
+            <p>1. Apply J'Adore Beautifying Body Cream.<br>
+                2. Spray J'adore Eau de Parfum on pulse points.<br>
+                3. Enjoy the fragrance more deeply with J'Adore Dry Silky Body and Hair Oil.</p>
+
+            <h6>product details<button id="down">⌵</button></h6>
+            <div id="details">
+                <b>product name :</b><br>
+                J'Adore - Eau de Parfum<br><br>
+
+                <b>Capacity or Weight:</b><br>
+                30ML, 50ML, 100ML, 150ML<br><br>
+
+                <b>Product main specifications:</b><br>
+                for all skin types<br><br>
+
+                <b>Expiration date or expiration date after opening:</b><br>
+                Products to be shipped are shipped sequentially, starting with products whose expiration date is more
+                than 8 months from the date of receipt of the customer order.
+                If you want to check the exact expiration date, please contact the Dior Customer Center
+                (080-342-9500).<br><br>
+
+                <b>How to use :</b><br>
+                1. Apply J'Adore Beautifying Body Milk.<br>
+                2. Spray J'adore Eau de Parfum on pulse points.<br>
+                3. Enjoy the scent more deeply with J'Adore Dry Body Oil.<br><br>
+
+                <b>Whether functional cosmetics have been reviewed:</b><br>
+                Not applicable<br><br>
+
+                <b>Cosmetics manufacturers and responsible cosmetics distributors:</b><br>
+                Responsible Cosmetics Distributor: LVMH Cosmetics Co., Ltd.<br><br>
+
+                <b>[Precautions for use]</b><br>
+                1. When using cosmetics or after use, there are red spots in the area of ​​use due to direct sunlight,
+                If there are any abnormal symptoms or side effects such as swelling or itching, see a specialist
+                to consult with<br>
+                2. Refrain from using on areas with scars, etc.<br>
+                3. Precautions for storage and handling<br>
+                A) Keep out of reach of children<br>
+                B) Store away from direct sunlight<br><br>
+
+                *Please refer to the label attached to the product for detailed precautions.
+                Country of manufacture: France
+            </div>
+
+            <script>
+                $(function () {
+                    $('#down').click(function () {
+                        $('#details').slideToggle();
+                    });
+                });
+            </script>
+
+        </article>
+    </section>
+
+
+    <section>
+
+        <div id="re">
+            <h2>REVIEW</h2>
+            <article><a href="#"><img src="img/down.jpg" alt="review1"></a></article>
+            <article><a href="#"><img src="img/down(2).jpg" alt="review2"></a></article>
+            <article><a href="#"><img src="img/down(6).jpg" alt="review3"></a></article>
+            <article><a href="#"><img src="img/down(4).jpg" alt="review4"></a></article>
+            <article><a href="#"><img src="img/down(5).jpg" alt="review5"></a></article>
+            <article><a href="#"><img src="img/down(1).jpg" alt="review6"></a></article>
+        </div>
+    </section>
+
+    <section class="view">
+        <table>
+            <tr>
+                <td>1</td>
+                <td><a href="#"><span>J'adore Eau de Parfum</span><br>
+                        <p>Has the best smell among all the perfumes i have ever had in my life</p>
+                    </a></td>
+                <td><img src="img/star.png" alt="star1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="#"><span>J'adore Eau de Parfum</span><br>
+                        <p>I purchased it for my wife the last month and she was very loved it .</p>
+
+                    </a></td>
+                <td><img src="img/star.png" alt="star2"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#"><span>J'adore Eau de Parfum</span><br>
+                        <p>This was a Dior sample sent to me when I made a purchase 10 months ago. Fell in love with the
+                            scent, so got a large bottle.</p>
+                    </a></td>
+                <td><img src="img/star2.png" alt="star3"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="#"><span>J'adore Eau de Parfum</span><br>
+                        <p>I purchased the perfume for my mother. For her birthday and she absolutely is in love with
+                            it.</p>
+                    </a></td>
+                <td><img src="img/star.png" alt="star4"></td>
+            </tr>
+
+        </table>
+        <article>
+            <p><a href="#">prev</a></p>
+            <p><a href="#">1</a></p>
+            <p><a href="#">2</a></p>
+            <p><a href="#">3</a></p>
+            <P><a href="#">next</a></P>
+        </article>
+    </section>
+
+
+
+    <footer>
+        <div id="footer">
+            <article class="logo2"><img src="img/dior2.png" alt="logo"></article>
+            <article class="etc">
+                <p>LVMH Cosmetics Co., Ltd. | 03155 11F, 17 Jongro 3-gil, Jongno-gu, Seoul (Cheongjin-dong, Gwanghwamun
+                    D Tower) | Cable registration number: 214-81-64219<br>
+                    Representative: Ariangel Inzenzburger, BERNARD BOUISSIERES NICOLAS FERNAND JA | Mail-order business
+                    registration number: 2018-Seoul Jongno-1505 | Check travel information<br>
+                    Personal Information Manager: Lucien FOISY | Customer Center: 080-342-9500 contact@dior.co.kr |
+                    Hosting service: Shopify</p>
+            </article>
+            <article id="sns">
+                <a href="https://www.facebook.com/Dior/"><img src="img/face.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/dior/"><img src="img/insta.png" alt="insta"></a>
+                <a href="https://www.youtube.com/channel/UC6xD-jKli-_qIYXDTsNv4dw"><img src="img/youtube.png" alt="youtube"></a>
+            </article>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

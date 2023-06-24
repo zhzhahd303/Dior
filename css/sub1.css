@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+
+*{margin: 0; padding: 0; text-decoration: none;  box-sizing: border-box;} 
+    ul,ol,li{list-style: none;}    
+
+
+
+@media (max-width:777px){
+    header{background-image: url(../img/1.jpg); background-size: cover; width: 100%; position: fixed; top: 0; z-index: 5;}
+    #logo{font-family: 'Nanum Myeongjo', serif;font-size: 11vw; text-align: center; font-weight:900; position: relative; top:15px; padding:1% 5% 1% 0;} 
+    #logo a{ color: white;}
+    
+    nav{ height: auto; width: 100%; z-index: 3; display: flex; flex-wrap:wrap;
+    position: fixed; right:0; background-image: url(../img/1.jpg);}
+    nav::before{content: ""; width: 100%; height: 100%; background: rgba(0,0,0,0.3); position: absolute; z-index: -1;}
+    #menu{display: flex; flex-direction: row-reverse;}
+    .tap{ position: relative; bottom: 6vw; right: 3%; width: 6vw;}
+    .tap:hover{cursor: pointer;}
+    
+    nav ul li:nth-of-type(1){font-size: 1.2em; text-shadow: 1px 2px 0px gray;font-family: 'Nanum Myeongjo', serif;  padding-left: 15%;}
+    nav ul li:nth-of-type(2),nav ul li:nth-of-type(3),nav ul li:nth-of-type(4),nav ul li:nth-of-type(5){padding-left: 15%;}
+    nav ul a{color: white; padding: 3%; display: flex; font-size: 1.5em; }
+    nav ul a:hover{text-decoration: underline;}
+    nav ul{width: 50%; padding-bottom: 10%}
+    nav ul li{padding: 5%;}
+    
+    #buy{ margin: 0 auto; width: 97%; padding: 30% 0 7% 0;}
+    #pc{width: 100%; height: 105vw;}
+    #pc img{width: 100%;}
+
+    #ml h2{font-size: 8vw;  font-family: 'Nanum Myeongjo', serif;}
+    #ml h3{font-size: 5vw;  }
+    #ml select{width: 100%; height: 13vw; font-size: 3vw; }
+    #ml select option{font-size: 3vw; display: flex; justify-content: space-between;}
+    #ml select option span:nth-last-of-type(2){float: right;}
+
+    #ml .ck button{width: 32.5%; margin-top: 5%; margin-bottom: 7%; border: 0.5px solid; background: white; padding: 4% 0; font-size: 5vw; border-radius: 5%;}
+    #ml .ck button:nth-child(3):hover{color: gold;}
+    #ml .ck button:nth-last-of-type(2){margin: 0 1%;}
+    #ml .ck button:nth-child(3){background: black; color: white;}
+
+    #buy article{width: 97%; margin: 0 auto;}
+
+    #online h3{font-size: 4vw; font-weight: 500; display: flex; justify-content: space-between; padding: 2% 0; border-bottom: 0.5px solid;}
+
+    #online p{display: none; font-size: 3.5vw; padding: 2%; background: #eee; line-height: 5vw;}
+    #online p:nth-of-type(2){overflow: scroll; height: 240px;}
+    #online .btn{ display: inline-block; width: 8%; background: none; border: none; font-size: 3vw;}
+    #online .btn:hover{cursor: pointer;}
+
+    #on{width: 97%; margin: 0 auto; padding-top: 10%;}
+    #on ul{display: flex; justify-items: center; }
+    #on ul li{width: 50%; text-align: center;  padding: 2.5%; font-size: 6vw;}
+    #on ul li a{color: black;}
+    #on ul li:nth-of-type(1){border-bottom: 3px solid;}
+    #on ul li:nth-of-type(2) a:hover{color: rgb(87, 85, 85);}
+
+    #photo{width: 90%; margin: 0 auto; padding: 10% 0 5% 0; }
+    #photo article .model{width: 100%; padding-bottom: 15%; }
+    #photo article #cen{width: 100%; }
+    #photo .cotton{width: 50%;}
+    #photo article p{ width: 100%; margin: 0 auto; text-align: center; ; padding: 2% 0; font-size: 4.5vw; font-family: 'Asap', sans-serif; line-height:6.5vw; }
+    #photo article p #bb{font-size:6vw; font-family: 'Nanum Myeongjo', serif; font-weight: 600;}
+    #photo article #video{width: 100%; padding: 25% 0 7% 0;}
+
+    
+    #photo article .two{padding: 25% 0 0 0 ; width: 100%;}
+    #photo article #flo{width: 100%; padding: 10% 0 25% 0;}
+    #photo article h5{ text-align: center; padding-top: 30%; font-size: 6vw;font-family: 'Nanum Myeongjo', serif;}
+    #photo article #hani{width: 100%; padding: 10% 0 3% 0;}
+
+    #photo article h6{font-family: 'Nanum Myeongjo', serif; display: flex; justify-content: space-between; text-align: center; font-size: 5vw; padding-top: 30%; border-bottom: 1px solid gray; font-weight: 500;}
+    #photo article h6 button{width: 3vw; height: 3vw; background: none; font-size: 5vw; font-weight: 100; border: none;}
+    #photo article h6 button:hover{cursor: pointer;}
+    #photo article #details{display: none; padding: 4% 3%; background: #eee; font-size: 1.5vw;}
+
+    #re{width: 90%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; border-radius: 1%; background:rgb(59, 59, 53); background-size: cover; padding: 0.5%;}
+    #re h2{width: 100%; text-align: center; font-weight: 100; color: white; font-size: 3.5vw; font-family: 'Asap', sans-serif; padding: 0.5% 0;}
+    #re article{width: 16%; height: 12vw;}
+    #re article img{width: 100%; height: 100%;}
+
+    .view{width: 90%; margin: 0 auto; padding-bottom: 10%;}
+    .view table{padding: 3% 0 5% 0; }
+    .view table tr td:nth-of-type(1){width: 10%; text-align: center; font-size: 3vw;}
+    .view table tr td:nth-of-type(2){width: 65%;}
+    .view table tr td:nth-of-type(3){width:12%;}
+    .view table tr td:nth-of-type(3) img{width: 100%;}
+
+    .view table tr td{padding: 2.7% 1%; border-bottom: 2.5px solid darkgray; width: 100%;}
+    .view table tr:nth-of-type(1){border-top: 3px solid;}
+    .view table tr td a{color: black;}
+    .view table tr td span{color: rgb(61, 61, 61); font-size: 2.8vw;}
+    .view table tr td p{font-size: 2vw; padding:3% 0 0 0;}
+    .view article{display: flex; justify-content: space-evenly; margin: 0 auto; width: 20%;}
+    .view article p{font-size: 2.5vw; padding: 0 15%;}
+    .view article p a{color: black; }
+
+    footer{width: 100%; height:auto; background: #eee; }
+    footer p{color: gray; font-size: 1px; padding-bottom: 4%;}
+    footer p br{display: none;}
+    #footer{width: 95%; height: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+    .logo2{width: 100%; display: flex; justify-content: center;}
+    .logo2 img{width: 20%; padding: 5%;}
+    .etc{width: 90%; }
+
+    #sns{display: flex; width: 25%; height: 50px; justify-content: space-around;}
+    #sns img{width: 80%; padding: 5%; display: flex;}
+}
+
+
+
+
+
+
+
+@media (min-width:778px) and (max-width:1199px){
+    header{background-image: url(../img/1.jpg); height: auto; width: 100%;}
+    #logo{font-family: "Baskerville Old Face"; font-size: 7vw; text-align: center;  position: relative; top: 15px;} 
+    #logo a{color: white;}
+    
+    nav{width: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; padding: 3% 5% 10% 10%; position: absolute;  right: 0; z-index: 3; background:rgb(0,0,0,0.9);}
+    #menu{display: flex; flex-direction: row-reverse;  }
+    .tap{ position: relative; bottom: 3vw; right: 3%; width: 4vw;}
+    .tap:hover{cursor: pointer;}
+    nav ul{width: 45%; padding-bottom: 5% ;}
+    nav ul li:nth-of-type(1){font-size: 3em; font-family: 'Nanum Myeongjo', serif; font-weight: bold;}
+    nav ul a{color: white; padding: 1.5vw; display: flex; font-size: 3vw;  }
+    nav ul a:hover{text-decoration: underline;}
+
+    #buy{ display: flex; justify-content: space-between; margin: 0 auto; width: 95%; padding: 12% 0;}
+    #pc img{width: 100%;}
+
+    #ml h2{font-size: 4vw; font-weight: 500; font-family: "Baskerville Old Face";}
+    #ml h3{font-size: 1.8vw;}
+    #ml select{width: 100%; height: 5vw; font-size: 1.8vw; }
+    #ml select option{font-size: 1.8vw;}
+    #ml select option span:nth-last-of-type(2){float: right;}
+
+    #ml .ck button{width: 32.5%; margin-top: 3%; margin-bottom: 7%; border: 0.5px solid black; background: white; padding: 4% 0; font-size: 2vw; border-radius: 5%;}
+    #ml .ck button:nth-child(3):hover{color: gold;}
+    #ml .ck button:nth-last-of-type(2){margin: 0 1%;}
+    #ml .ck button:nth-child(3){background: black; color: white;}
+
+    #buy article{width: 48%;}
+
+    #online h3{font-size: 2vw; font-weight: 500; display: flex; justify-content: space-between; padding: 2.5% 0; border-bottom: 0.35px solid;}
+
+    #online p{ font-size: 1.5vw; padding: 2%; background: #eee;}
+    #online p:last-of-type{display: none;}
+    #online p:nth-of-type(2){overflow: scroll; height: 200px;}
+    #online .btn{ display: inline-block; width: 8%; background: none; border: none;  font-size: 2vw;}
+    #online .btn:hover{cursor: pointer;}
+
+    #on{width: 90%; margin: 0 auto; }
+    #on ul{display: flex; justify-items: center; }
+    #on ul li{width: 93%; text-align: center;  padding: 2.5%; font-size: 3.5vw;}
+    #on ul li a{color: black;}
+    #on ul li:nth-of-type(1){border-bottom: 3px solid;}
+    #on ul li:nth-of-type(2) a:hover{color: rgb(87, 85, 85);}
+
+    #photo{width: 85%; margin: 0 auto; padding: 10% 0 5% 0; }
+    #photo article .model{width: 100%; padding-bottom: 15%; }
+    #photo article #cen{width: 100%; }
+    #photo .cotton{width: 50%;}
+    #photo article p{ width: 100%; margin: 0 auto; padding: 2% 0; font-size: 2.8vw; font-family: 'Asap', sans-serif; line-height:4.5vw; }
+    #photo article p:nth-of-type(2){text-align: center;}
+    #photo article p #bb{font-size: 4vw; font-family: 'Nanum Myeongjo', serif;}
+    #photo article #video{width: 100%; padding: 25% 0 7% 0;}
+
+    #photo article .two{padding: 25% 0 0 0 ; width: 100%;}
+    #photo article #flo{width: 100%; padding: 10% 0 25% 0;}
+    #photo article h5{ text-align: center; padding-top: 30%; font-size: 5vw; font-family: 'Nanum Myeongjo', serif; }
+    #photo article #hani{width: 100%; padding: 10% 0 3% 0;}
+
+    #photo article h6{display: flex; justify-content: space-between; text-align: center; font-size: 3vw; font-weight: lighter; padding-top: 30%; border-bottom: 1px solid; font-family: 'Nanum Myeongjo', serif;}
+    #photo article h6 button{width: 3vw; height: 3vw; background: none; font-size: 3vw; font-weight: 100; border: none;}
+    #photo article h6 button:hover{cursor: pointer;}
+    #photo article #details{display: none; padding: 4% 3%; background: #eee; font-size:1.3vw;}
+
+    #re{width: 80%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; border-radius: 1%; background: rgb(61, 61, 61); background-size: cover; padding: 0.5%;}
+    #re h2{width: 100%; font-weight: 100; color: white; font-size: 2.2vw; font-family: 'Asap', sans-serif; padding: 0.5% 0;}
+    #re article{width: 16%; height: 12vw;}
+    #re article img{width: 100%; height: 100%;}
+
+    .view{width: 80%; margin: 0 auto; padding-bottom: 10%;}
+    .view table{padding: 3% 0 5% 0; }
+    .view table tr td:nth-of-type(1){width: 10%; text-align: center; font-size: 1.5vw;}
+    .view table tr td:nth-of-type(2){width: 65%;}
+    .view table tr td:nth-of-type(3){width:12%;}
+    .view table tr td:nth-of-type(3) img{width: 100%;}
+
+    .view table tr td{padding: 2.7% 1%; border-bottom: 2.5px solid darkgray; width: 100%;}
+    .view table tr:nth-of-type(1){border-top: 3px solid;}
+    .view table tr td a{color: black;}
+    .view table tr td span{color: rgb(68, 68, 68); font-size: 2vw;}
+    .view table tr td p{font-size: 1.5vw; padding:2% 0 0 0;}
+    .view article{display: flex; justify-content: space-evenly; margin: 0 auto; width: 20%;}
+    .view article p{font-size: 2vw; padding: 0 10%;}
+    .view article p a{color: black;}
+
+    footer{width: 100%; background: #eee; }
+        footer p{color: gray; font-size: 0.75vw; padding: 5% 0;}
+        #footer{width: 80%; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+        .logo2{width: 15%; }
+        .logo2 img{width: 50%; display: flex; }
+        .etc{width: 60%; }
+    
+        #sns{display: flex; width: 15%; height: 50px; justify-content: space-around;}
+        #sns img{width: 70%; height: auto; display: flex;}
+         
+}    
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1200px){
+    header{background-image: url(../img/2.jpg); background-position: center; height: auto; width: 100%;}
+    #logo{ font-family: "Baskerville Old Face"; font-size: 3.7vw; text-align: center; padding-bottom: 1% ; font-weight: 500; position: relative; top: 1vw; } 
+    #logo a{color: white;}
+    
+    nav{display: flex;  flex-wrap: wrap; justify-content: space-between;  width: 50%; 
+    position: absolute; right: 0; padding: 2% 7% 2% 5%; z-index: 3;  background: rgba(0,0,0,0.9)}
+    #menu{display: flex; flex-direction: row-reverse;}
+    .tap{ position: absolute; top: 4%; right: 3%; width: 2.5vw;}
+    .tap:hover{cursor: pointer;}
+    nav ul{width: 50%; padding-bottom: 7%;}
+    nav ul li:nth-of-type(1){font-size:large; font-family: "바탕"; font-weight: bold;}
+    nav ul a{color: white; padding: 5%; display: flex; font-size: 1.5vw; }
+    nav ul a:hover{text-decoration: underline;}
+
+    #buy{ display: flex; height: 50vw; justify-content: space-between; margin: 0 auto; width: 70%; padding: 7% 0;}
+    #pc img{width: 100%;}
+
+    #ml h2{font-size: 2.5vw; font-weight: 500; font-family: "Baskerville Old Face"; }
+    #ml h3{font-size: 1vw; padding-bottom: 2%;}
+    #ml select{width: 100%; height: 3vw; font-size: 1vw; }
+    #ml select option{font-size: 1vw; display: flex; justify-content: space-between;}
+    #ml select option span:nth-last-of-type(2){float: right;}
+
+    #ml .ck button{width: 32.5%; margin-top: 5%; margin-bottom: 7%; border: 0.5px solid; background: white; padding: 3.5% 0; font-size: 1.2vw; border-radius: 5%;}
+    #ml .ck button:hover{cursor: pointer;}
+    #ml .ck button:nth-last-of-type(2){margin: 0 1%;}
+    #ml .ck button:nth-child(3){background: black; color: white;}
+    #ml .ck button:nth-child(3):hover{color: gold;}
+    #buy article{width: 45%;}
+
+    #online h3{font-size: 1.2vw; font-weight: 500; display: flex; justify-content: space-between; padding: 3% 0; border-bottom: 0.35px solid;}
+
+    #online p{ font-size: 0.8vw; padding: 2%; background: #eee;}
+    #online p:nth-last-of-type(1){display: none;}
+    #online p:nth-of-type(2){overflow: scroll; height: 240px;}
+    #online .btn{ display: inline-block; width: 8%; background: none; border: none; font-size: 100%;}
+    #online .btn:hover{cursor: pointer;}
+
+    #on{width: 50%; margin: 0 auto; }
+    #on ul{display: flex; justify-items: center; }
+    #on ul li{width: 50%; text-align: center;  padding: 2.5%; font-size: 2vw;}
+    #on ul li a{color: black;}
+    #on ul li:nth-of-type(1){border-bottom: 2px solid;}
+    #on ul li:nth-of-type(2) a:hover{color: rgb(87, 85, 85);}
+
+    #photo{width: 50%; margin: 0 auto; padding: 10% 0 5% 0; }
+    #photo article .model{width: 100%; padding-bottom: 15%; }
+    #photo article #cen{width: 100%; }
+    #photo .cotton{width: 50%;}
+    #photo article p{ width: 100%; margin: 0 auto; padding: 2% 0; font-size: 1.8vw; font-family: 'Asap', sans-serif; line-height:3vw; }
+    #photo article p:nth-of-type(2){text-align: center;}
+    #photo article p #bb{font-size: 3vw; font-family: 'Nanum Myeongjo', serif;}
+    #photo article #video{width: 100%; padding: 25% 0 7% 0;}
+
+    #photo article .two{padding: 25% 0 0 0 ; width: 100%;}
+    #photo article #flo{width: 100%; padding: 10% 0 25% 0;}
+    #photo article h5{ text-align: center; padding-top: 30%; font-size: 4vw; font-weight: lighter; font-family: 'Nanum Myeongjo', serif; }
+    #photo article #hani{width: 100%; padding: 10% 0 3% 0;}
+
+    #photo article h6{display: flex; justify-content: space-between; text-align: center; font-size: 2.2vw; font-weight: lighter; padding-top: 30%; border-bottom: solid;}
+    #photo article h6 button{width: 3vw; height: 3vw; background: none; font-size: 3vw; font-weight: 100; border: none;}
+    #photo article h6 button:hover{cursor: pointer;}
+    #photo article #details{display: none; padding: 4% 3%; background: #eee; font-size: 0.95vw;}
+
+    #re{width: 70%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; border-radius: 1%;background: rgb(61, 61, 61);background-size: cover; padding: 0.5%;}
+    #re h2{width: 100%; font-weight: 100; color: white; font-size: 1.5vw; font-family: 'Asap', sans-serif;}
+    #re article{width: 16%; height: 12vw;}
+    #re article img{width: 100%; height: 100%;}
+
+    .view{width: 70%; margin: 0 auto; padding-bottom: 5%;}
+    .view table{padding: 3% 0 5% 0; }
+    .view table tr td:nth-of-type(1){width: 10%; text-align: center; font-size: 1vw;}
+    .view table tr td:nth-of-type(2){width: 65%;}
+    .view table tr td:nth-of-type(3){width:10%;}
+    .view table tr td:nth-of-type(3) img{width: 100%;}
+
+    .view table tr td{padding: 2.7% 1%; border-bottom: 2.5px solid darkgray; width: 100%;}
+    .view table tr:nth-of-type(1){border-top: 3px solid;}
+    .view table tr td a{color: black;}
+    .view table tr td span{color: rgb(68, 68, 68); font-size: 1.3vw;}
+    .view table tr td p{font-size: 1.1vw; padding:2% 0 0 0;}
+    .view article{display: flex; justify-content: space-evenly; margin: 0 auto; width: 30%;}
+    .view article p{font-size: 1.4vw;}
+    .view article p a{color: black;}
+
+    footer{width: 100%; height: auto; background: #eee; }
+    footer p{color: gray; font-size: 0.75vw; padding: 3% 0;}
+    #footer{width: 80%; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+    .logo2{width: 15%; }
+    .logo2 img{width: 50%; display: flex; }
+    .etc{width: 60%; }
+
+    #sns{display: flex; width: 15%; height: auto; justify-content: space-around;}
+    #sns img{width: 70%; display: flex;}
+}
